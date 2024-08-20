@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+
+}
+
+body {
+    background-color: #212121;
+}
+
+#container {
+    /* border: 2px solid red; */
+    height: 9vh;
+    width: 29vw;
+    margin: auto;
+    margin-top: 7%;
+}
+
+#container .card {
+    position: relative;
+    /* border: 2px solid rgb(54, 11, 247); */
+    height: 74vh;
+    width: 23.5vw;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 20px;
+    /* box-shadow: inset 0px 275px #FFCE00; */
+    background-color: #191919;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#container .card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #FFCE00;
+    transform: skewY(340deg);
+    transition: 0.5s;
+    z-index: -1;
+    -webkit-transform: skewY(340deg);
+    -moz-transform: skewY(340deg);
+    -ms-transform: skewY(340deg);
+    -o-transform: skewY(340deg);
+}
+
+#container .card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+    -webkit-transform: skewY(390deg);
+    -moz-transform: skewY(390deg);
+    -ms-transform: skewY(390deg);
+    -o-transform: skewY(390deg);
+}
+
+.card::after {
+    content: "Hussain";
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    font-weight: 600;
+    font-size: 5.4em;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    /* display: block; */
+}
+
+.img-box {
+    /* border: 2px solid gray; */
+    height: 46vh;
+    width: 13.5vw;
+    margin-top: 4%;
+    /* overflow: hidden; */
+}
+
+.card .text {
+    /* border: 2px solid red; */
+    width: 18vw;
+    height: 8vh;
+    margin: auto;
+    padding: 2% 2%;
+    color: #FFFFFF;
+    line-height: 19.5pt;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.card .text p {
+    font-size: 18.9px;
+}
+
+.card .text b {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.btn {
+    /* border: 2px solid rgb(4, 177, 245); */
+    height: 6vh;
+    width: 11vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+    padding: .5% .5%;
+    /* display: none;         */
+}
+
+button {
+    position: relative;
+    top: 100px;
+    height: 5.5vh;
+    width: 10.5vw;
+    font-size: 16px;
+    transition: 0.5s;
+    background-color: #FFCE00;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+}
+
+.card:hover .text .btn {
+    top: 0;
+    opacity: 1;
+}
